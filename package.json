@@ -6,7 +6,9 @@
   "main": "src",
   "scripts": {
     "dev": "nodemon src/index.js",
-    "start": "node src"
+    "start": "node src",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -31,9 +33,11 @@
     "express-handlebars": "^3.0.0",
     "mongodb": "^2.2.11",
     "morgan": "^1.6.1",
-    "node-cron": "^2.0.1"
+    "node-cron": "^2.0.1",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "nodemon": "^1.9.2"
-  }
+  },
+  "snyk": true
 }
